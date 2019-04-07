@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		<title>注册</title>
+	</head>
+	<body>
+		<p>HelloWorld PHP</p>
+		<p>
+			用户注册
+		</p>
+		<form action="test.php" method="post">
+			<input type="text" name="userame" id="userame" placeholder="用户名" /> <br /><br />
+			<input type="text" name="phone" id="phone" placeholder="手机号" /><br />
+			<p>性别
+			<label>男
+				<input type="radio" name="sex" id="sex" value="男" placeholder="男"  checked="checked" />
+			</label>
+			<label>女
+				<input type="radio" name="sex" id="sex"  value="女" placeholder="女"  /><br />
+			</label>
+			</p>
+			<input type="password" name="password" id="password" placeholder="密码" /><br />
+			<input type="submit" value="注册" />
+		</form>
+
+		<script type="text/javascript">
+			function setCookie(name, value) {
+				var exp = new Date();
+				exp.setTime(exp.getTime() + 60 * 60 * 1000);
+				document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString() + ";path=/";
+			}
+			setCookie('token','cook12212212')
+		</script>
+	</body>
+</html>
