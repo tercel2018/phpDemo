@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <title>云玺印ERP-图文广告行业业绩提升的秘密武器</title>
+  <script>
+    // 移动端适配
+    !(function(win, doc) {
+      // 获取根节点
+      var d = doc.documentElement || doc.body
+      // 移动端配置
+      var mobile_config = {
+        // 根节点标准字体
+        'fontSize' : 40 , 
+        // 最大宽度
+        'maxWidth' : 640
+      }
+      // 根节点字体计算
+      function pageInit() {
+        var deviceWidth = d.clientWidth
+        if (deviceWidth < mobile_config.maxWidth || deviceWidth === mobile_config.maxWidth){
+            d.style.fontSize = (d.clientWidth / mobile_config.maxWidth) * mobile_config.fontSize + 'px'
+        } else {
+            d.style.fontSize = '16px'
+        }
+      }
+      pageInit()
+      win.addEventListener('resize', pageInit, false)
+    })(window, document)
+  </script>
+  <!-- iconfont cdn地址-->
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_886137_wtxpdav3phl.css">
+  <link rel="stylesheet" href="/static/css/basic.css">
+</head>
+
+<body>
+  <div id="app">
+    <p class="my-animate-loading"></p>
+  </div>
+  <!-- built files will be auto injected -->
+  <!-- 引入jquery -->
+  <script src="/static/js/jquery-3.3.1.min.js"></script>
+  <!-- 支付宝支付 -->
+  <script src="https://gw.alipayobjects.com/as/g/h5-lib/alipayjsapi/3.1.1/alipayjsapi.inc.min.js"></script>
+  <!-- 微信jssdk -->
+  <script src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+  <!-- 延迟加载 缩短首屏空白时间 -->
+  <script src="/static/js/lazyLoading.js"></script>
+</body>
+</html>

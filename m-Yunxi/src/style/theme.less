@@ -1,0 +1,57 @@
+// 【Less变量设置】
+// 基本色 start
+@theme-color: #1a97e3;
+@blue: #1a97e3;
+@red: #e52e2e;
+@orange:#FF5722;
+@grey:#cbcbcb;
+@green:#05d14c;
+@3: #333;
+@6: #666;
+@9: #999;
+// 基本色 end
+
+// 基本字体 start 
+// 移动端布局建议: 字体单位以rem为主、以em为辅; 宽、高、内外边距等尺寸单位以百分比和vw为主、以rem、vh为辅; 适当使用px
+// rem单位换算(假如屏幕宽度为w(px), 字体标准为fz=40(px), 那么此时1rem代表的字体大小为w/fz(px), 即根节点字体大小)
+// 当屏幕宽度为640px时，1rem等于40px
+@f5: 0.5rem;
+@f6: 0.6rem;
+@f7: 0.7rem;
+@f8: 0.8rem;
+@f9: 0.9rem;
+@f10: 1rem;
+@f11: 1.1rem;
+@f12: 1.2rem;
+// 基本字体 end
+
+// vux覆盖样式 start
+// toast 文字大小
+@toast-content-font-size: @f6;
+
+//primary按钮 背景颜色
+@button-global-height: 2rem;
+@button-global-font-size: @f7;
+@button-primary-bg-color: @blue;
+@button-primary-active-bg-color: #1a97e3bd;
+@button-primary-disabled-bg-color: #1ab9e3;
+
+// 头部组件样式覆盖
+@header-background-color: #393a3e;
+@header-title-color: #fff;
+@header-text-color: #fff;
+@header-arrow-color: #fff;
+
+// tabbar
+@tabbar-text-active-color: @blue;
+
+// search
+@search-cancel-font-color:@blue;
+
+// radio
+@radio-checked-icon-color:@blue;
+
+// datetime
+@datetime-header-item-confirm-font-color:@blue;
+
+// vux覆盖样式 end
