@@ -1,0 +1,429 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+li {
+  list-style: none;
+}
+html {
+  width: 100%;
+  height: 100%;
+  color: #333;
+  font-size: 17px;
+  background-color: #f5f5f5;
+}
+body{
+  min-height:100%;
+  -webkit-overflow-scrolling: touch;
+  overflow:auto;
+}
+a{
+  text-decoration: none;
+}
+button::-moz-focus-inner {border-color: transparent;} /*for mozilla*/
+/* 横向分割线：灰色背景的 */
+.split {
+  height: 10px;
+  background-color: #f5f5f5;
+}
+
+/* 仅红色字体 */
+.red {
+  color: #e52e2e;
+}
+
+/* 仅蓝色字体 */
+.blue {
+  color: #1a97e3;
+}
+
+/* 仅绿色字体 */
+.green{
+  color:#05d14c;
+}
+
+/* 仅橙色字体 */
+.orange{
+  color:#FF5722;
+}
+
+/* 仅灰色字体 */
+.grey{
+  color:#cbcbcb;
+}
+
+/* 仅#999字体 */
+.c9 {
+  color: #999;
+}
+
+/* 仅#666字体 */
+.c6{
+  color: #666;
+}
+
+/* 仅#333字体 */
+.c3{
+  color: #333;
+}
+
+/*字体大小*/
+.fs12{
+  font-size: 1.2rem;
+}
+.fs11{
+  font-size: 1.1rem;
+}
+.fs10{
+  font-size: 1rem;
+}
+.fs9{
+  font-size: 0.9rem;
+}
+.fs8{
+  font-size: 0.8rem;
+}
+.fs7{
+  font-size: 0.7rem;
+}
+.fs6{
+  font-size: 0.6rem;
+}
+
+/* 解决：登录注册表单样式 start*/
+
+/* 表单背景透明 */
+.x-form .weui-cells {
+  background-color: transparent;
+}
+
+/* 去掉顶部边框 */
+.x-form .weui-cells:before {
+  display: none;
+}
+
+/* 去掉内层左边15px距离 */
+.x-form .weui-cell {
+  padding-left: 0;
+}
+
+.x-form .vux-cell-box:not(:first-child):before,
+.x-form .weui-cell:before {
+  left: 0;
+}
+
+/* 解决：登录注册表单样式 end*/
+
+/* 解决 按钮右边框无法显示*/
+.x-btn {
+  width: calc(100% - 1px) !important;
+}
+
+/* flex布局：两端对齐 */
+.flex {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+/* vux start */
+
+/* label、input、table-item等字体大小重置 */
+.weui-label, .weui-input, .vux-tab-item{
+  font-size: 0.6rem !important;
+}
+
+/* popupRadio */
+
+.weui-cell.vux-tap-active.weui-cell_access .vux-label{
+  font-size: 0.6rem !important;
+}
+
+/* radio字体大小重置 */
+.weui-cells_radio .vux-radio-label{
+  font-size: 0.6rem !important;
+}
+
+/* tabbar-label字体大小重置 */
+.weui-tabbar__label{
+  font-size: 0.5rem !important;
+}
+
+/* .scrollable .vux-tab-item {
+    -ms-flex: 0 0 20%!important;
+    flex: 0 0 20%!important;
+} */
+
+.vux-tab-item-badge{
+  top:-0.9rem !important;
+  margin: auto 0 auto -2px !important;
+}
+
+/* msg-title、icon_msg字体大小重置 */
+/* .weui-icon_msg{
+  font-size: 4rem !important;
+} */
+
+.weui-msg__title{
+  font-size: 0.9rem !important;
+}
+
+/* check-icon样式 */
+.vux-check-icon{
+  font-size: 0.6rem !important;
+}
+.weui-cells:after {
+  border-bottom:0!important;
+}
+.vux-check-icon > .weui-icon-success:before, 
+.vux-check-icon > .weui-icon-success-circle:before {
+  color:#1a97e3!important;
+}
+
+/* ckecklist */
+.pay .weui-cells_checkbox{
+  background: none!important;
+}
+
+/* gridItem样式 */
+.weui-grid{
+  text-decoration: none!important;
+  text-align:center;
+  color:#666;
+}
+/*search组件*/
+.vux-search-fixed{
+  position: relative !important;
+}
+
+/*toast loading样式*/
+.weui-loading_toast .weui-toast{
+  width:40vw !important;
+  min-height:40vw !important;
+  margin-left: 0vw !important;
+  top:50%!important;
+  transform: translate(-50%, -50%)!important;
+}
+.weui-loading_toast .weui-toast .weui-loading.weui-icon_toast{
+  margin: 6vw 0 0!important;
+  width:15vw!important;
+  height:15vw!important;
+}
+.weui-loading_toast .weui-toast .weui-toast__content{
+  margin:0!important;
+  margin-top: 3vw!important;
+}
+.weui-loading_toast .weui-wepay-flow__process,.weui-loading_toast .weui-wepay-flow__li_done .weui-wepay-flow__state{
+  background-color:#1a97e3!important;
+}
+
+/* .weui-dialog 样式 */
+/* .weui-dialog{
+  top:50%!important;
+  transform: translateY(-50%)!important;
+} */
+
+/* flow组件 垂直*/
+.weui-wepay-flow, .weui-wepay-flow-auto{
+  padding:7vw 0 7vw 15vw!important;
+}
+.weui-wepay-flow_vertical .weui-wepay-flow__bd{
+  margin-left:-100%!important;
+}
+.weui-wepay-flow__title-right{
+  font-size:0.6rem!important;
+}
+
+/* 按钮样式覆盖 */
+.weui-btn {
+  display: inline-block !important;
+  width: auto !important;
+  margin: 0 !important;
+  line-height: 300% !important;
+  overflow: visible!important;
+  font-size: 0.6rem!important;
+}
+
+.weui-btn+.weui-btn {
+  margin-left: 2vw !important;
+}
+
+/* 默认按钮文字颜色 */
+.weui-btn_default {
+  color: #999 !important;
+}
+
+/* plain-primary类型按钮：蓝色边框+蓝色文字 */
+.weui-btn_plain-primary {
+  color: #1a97e3 !important;
+  border-color: #1a97e3 !important;
+}
+
+/* plain-default类型按钮：灰色边框+灰色文字 */
+.weui-btn_plain-default {
+  color: #999 !important;
+  border-color: #999 !important;
+}
+
+/* 按钮宽度100% */
+.w100 {
+  width: 100% !important;
+}
+
+/* 按钮宽度50% */
+.w50 {
+  width: 50% !important;
+}
+
+/* x-header 固定定位--定制 */
+.xHeaderFixed{
+  position: fixed !important;
+  width:100%;
+  height:max-content;
+  z-index:999;
+  left:0;
+  top:0;
+}
+
+/* datetime */
+
+.dp-container .dp-header .dp-item.vux-datetime-clear{
+  color:#e52e2e!important;
+}
+
+/* vux confirm */
+.vux-confirm .vux-x-dialog .weui-dialog__btn_primary{
+  color:#1a97e3!important;
+}
+
+/* vux end*/
+
+/* vux公共类名样式 start */
+
+.vux-group-border-bottom{
+  position:relative;
+}
+.vux-group-border-bottom:after{
+  position:absolute;
+  content: " ";
+  left: 0;
+  right: 0;
+  border-top: 1px solid #D9D9D9;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+
+.vux-xbutton-width-100-percent{
+  width:100%!important;
+  margin-bottom:4vw!important;
+}
+
+.weui-cell__ft span.vux-cell-value,
+.vux-popup-picker-select span.vux-cell-value,
+.group-label-font .vux-label,
+.vux-cell-bd .vux-label{
+  font-size: 0.6rem!important;
+}
+.no-border-top-group .weui-cells{
+  margin-top:0!important;
+}
+.no-border-top-group .weui-cells:before{
+  border:0!important;
+}
+
+/* popover */
+.vux-popover.v-transfer-dom{
+  margin-left:6vw;
+}
+
+/* x-address */
+
+.x-address-has-border-bottom{
+  position: relative;
+}
+.x-address-has-border-bottom:after{
+  content:'';
+  position: absolute;
+  bottom:0;
+  left:15px;
+  height:1px;
+  width:calc(100vw - 15px);
+  width: -webkit-calc(100vw - 15px);
+  background-color: #D9D9D9;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+
+/* 表单required */
+.element-value-required .weui-cell__hd label.weui-label,
+.element-value-required .vux-cell-bd label.vux-label{
+  position:relative;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  padding-left:10px!important;
+}
+.element-value-required .weui-cell__hd label.weui-label:after,
+.element-value-required .vux-cell-bd label.vux-label:after{
+  content: '';
+  position:absolute;
+  left: 0px;
+  top:50%;
+  transform:translateY(-50%);
+  -webkit-transform:translateY(-50%);
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  background-color:#FF5722;
+}
+
+/* vux公共类名样式 end*/
+
+#app .my-animate-loading{
+  position:fixed;
+  top:50%;
+  left:50%;
+  width: 1em;
+  height: 1em;
+  transform: translate(-50%, -50%);
+  -moz-animation: spinner-loader 1500ms infinite linear;
+  -webkit-animation: spinner-loader 1500ms infinite linear;
+  animation: spinner-loader 1500ms infinite linear;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  -moz-box-shadow: rgba(26, 151, 227, 0.8) 1.5em 0 0 0, rgba(26, 151, 227, 0.8) 1.1rem 1.1em 0 0, rgba(26, 151, 227, 0.8) 0 1.5em 0 0, rgba(26, 151, 227, 0.8) -1.1em 1.1em 0 0, rgba(26, 151, 227, 0.8) -1.5em 0 0 0, rgba(26, 151, 227, 0.8) -1.1em -1.1em 0 0, rgba(26, 151, 227, 0.8) 0 -1.5em 0 0, rgba(26, 151, 227, 0.8) 1.1em -1.1em 0 0;
+  -webkit-box-shadow: rgba(26, 151, 227, 0.8) 1.5em 0 0 0, rgba(26, 151, 227, 0.8) 1.1em 1.1em 0 0, rgba(26, 151, 227, 0.8) 0 1.5em 0 0, rgba(26, 151, 227, 0.8) -1.1em 1.1em 0 0, rgba(26, 151, 227, 0.8) -1.5em 0 0 0, rgba(26, 151, 227, 0.8) -1.1em -1.1em 0 0, rgba(26, 151, 227, 0.8) 0 -1.5em 0 0, rgba(26, 151, 227, 0.8) 1.1em -1.1em 0 0;
+  box-shadow: rgba(26, 151, 227, 0.8) 1.5em 0 0 0, rgba(26, 151, 227, 0.8) 1.1em 1.1em 0 0, rgba(26, 151, 227, 0.8) 0 1.5em 0 0, rgba(26, 151, 227, 0.8) -1.1em 1.1em 0 0, rgba(26, 151, 227, 0.8) -1.5em 0 0 0, rgba(26, 151, 227, 0.8) -1.1em -1.1em 0 0, rgba(26, 151, 227, 0.8) 0 -1.5em 0 0, rgba(26, 151, 227, 0.8) 1.1em -1.1em 0 0;
+  display: inline-block;
+  font-size: 10px;
+  margin: 0;
+  overflow: hidden;
+  text-indent: 0;
+}
+@keyframes spinner-loader{
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
