@@ -1,0 +1,48 @@
+msconfig
+
+Yanlongfei!2345 禅道
+
+Yan123***
+
+Ylf123***
+
+邮箱
+N@201811232689
+yan.lf@neusoft.com
+
+http://zentao.nhdc.com
+
+
+
+192.168.1.66 portal.nhdc.com   
+  
+192.168.1.66 upms.nhdc.com
+192.168.1.64  eureka.dev.com
+192.168.1.64  config.dev.com
+192.168.1.64  gateway.dev.com
+192.168.1.64  auth.dev.com
+192.168.1.62  mysql.dev.com
+192.168.1.63  redis.dev.com
+192.168.1.63  kafka.dev.com
+
+192.168.1.66 gitlab.nhdc.com    
+192.168.1.66 doc.nhdc.com
+192.168.1.66 maven.nhdc.com
+192.168.1.66 zentao.nhdc.com
+192.168.1.66 rap.nhdc.com
+192.168.1.66 portal.nhdc.com  
+192.168.1.66 upms.nhdc.com
+192.168.1.66 sonar.nhdc.com
+
+
+
+
+192.168.1.66 zentao.nhdc.com  gitlab.nhdc.com rap.nhdc.com
+
+
+W + Q  搜索
+W + L  锁
+W + r 运行 
+w+D 最小化
+alt +ESC 切换下一窗口
+alt + tab 切换窗口
